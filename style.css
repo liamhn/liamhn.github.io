@@ -80,20 +80,45 @@ body {
   color: #000000; /* Black text for maximum visibility */
   text-decoration: none;
   font-weight: bold;
-  border-radius: 6px;
-  /* No transition property */
+  border-radius: 1px;
 }
 
-/* Remove hover style completely */
 .resume-button:hover {
-  /* No styles here - removing hover effects */
-  background-color: #90caf9; /* Same as non-hover */
-  color: #000000; /* Same as non-hover */
+  background-color: #90caf9;
+  color: #000000;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #1e2a38;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 260px; /* Align with sidebar width */
+  z-index: 100;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.navbar a:hover, .navbar a.active {
+  background-color: #2c3e50;
 }
 
 /* Main Content */
 .main-content {
   margin-left: 260px;
+  margin-top: 3.5rem; /* Add top margin for navbar */
   padding: 2.5rem;
   flex: 1;
   font-size: 1.1rem;
@@ -154,6 +179,17 @@ footer {
   
   .main-content {
     margin-left: 0;
+    margin-top: 3rem;
     padding: 1.5rem;
+  }
+  
+  .navbar {
+    left: 0;
+    justify-content: center;
+  }
+  
+  .navbar a {
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
   }
 }
