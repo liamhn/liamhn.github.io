@@ -1,69 +1,125 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: sans-serif;
-  display: flex;
-  min-height: 100vh;
-  background: #f4f4f4;
+  padding: 0;
 }
 
+body {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Sidebar */
 .sidebar {
-  width: 250px;
-  background: #283593;
+  width: 260px;
+  background-color: #1e2a38;
   color: white;
   padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .profile-pic {
-  width: 120px;
-  height: 120px;
-  border-radius: 100px;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
   object-fit: cover;
   margin-bottom: 1rem;
+  border: 3px solid white;
+}
+
+.sidebar h1 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.sidebar p {
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
 }
 
 .sidebar nav ul {
   list-style: none;
-  padding: 0;
+  width: 100%;
+  padding-left: 0;
+  margin-bottom: 1.5rem;
 }
 
 .sidebar nav li {
-  margin: 10px 0;
+  margin: 0.5rem 0;
+  text-align: center;
 }
 
 .sidebar nav a {
-  color: white;
   text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.sidebar nav a:hover {
+  color: #90caf9;
 }
 
 .contact-info {
-  margin-top: 1.5rem;
+  font-size: 0.85rem;
   text-align: center;
-  font-size: 0.9rem;
+  margin-top: auto;
 }
 
+.contact-info a {
+  color: #90caf9;
+  text-decoration: none;
+}
+
+/* Main Content */
 .main-content {
-  flex: 1;
+  margin-left: 260px;
   padding: 2rem;
+  flex: 1;
 }
 
 section {
   margin-bottom: 3rem;
 }
 
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.3rem;
+}
+
 .project {
-  background: white;
+  background-color: white;
   padding: 1rem;
+  margin-bottom: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  margin-bottom: 1rem;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  text-decoration: none;
+  color: #1e88e5;
+  font-weight: bold;
 }
 
 footer {
   text-align: center;
-  margin-top: 2rem;
   font-size: 0.9rem;
-  color: #555;
+  color: #777;
+  margin-top: 2rem;
 }
