@@ -77,16 +77,18 @@ body {
   margin-top: 1rem;
   padding: 0.5rem 1rem;
   background-color: #90caf9;
-  color: #0d1520; /* Darker color for better contrast */
+  color: #000000; /* Black text for maximum visibility */
   text-decoration: none;
   font-weight: bold;
   border-radius: 6px;
-  transition: all 0.2s ease;
+  /* No transition property */
 }
 
+/* Remove hover style completely */
 .resume-button:hover {
-  background-color: #64b5f6;
-  color: #000000; /* Even darker on hover */
+  /* No styles here - removing hover effects */
+  background-color: #90caf9; /* Same as non-hover */
+  color: #000000; /* Same as non-hover */
 }
 
 /* Main Content */
