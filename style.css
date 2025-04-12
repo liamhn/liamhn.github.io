@@ -65,7 +65,6 @@ body {
 
 .contact-info a {
   display: block; /* Make each link a block element */
-  margin-bottom: 0.5rem; /* Add space between links */
 }
 
 .contact-info a:hover {
