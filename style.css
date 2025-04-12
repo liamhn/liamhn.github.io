@@ -162,6 +162,32 @@ footer {
   margin-top: 2rem;
 }
 
+.project-content {
+  display: flex;
+  justify-content: space-between; /* Makes sure there's space between the text and the image */
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project-text {
+  flex: 1;
+  max-width: 60%;
+}
+
+.project-image-wrapper {
+  flex-shrink: 0;
+  width: 400px; /* Adjust this to make the image larger */
+  align-self: flex-start; /* Aligns the image to the top */
+}
+
+.project-image-right {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
 /* Mobile Responsiveness */
 @media screen and (max-width: 768px) {
   body {
