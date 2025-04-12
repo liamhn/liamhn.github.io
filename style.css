@@ -60,13 +60,12 @@ body {
   font-size: 0.9rem;
   text-align: center;
   margin-top: 1rem;
-  margin-bottom: 1.5rem;  /* Add space below the contact info */
+  margin-bottom: 2rem; /* Increase space below the contact info */
 }
 
 .contact-info a {
-  color: #90caf9;
-  text-decoration: none;
-  font-weight: 500;
+  display: block; /* Make each link a block element */
+  margin-bottom: 0.5rem; /* Add space between links */
 }
 
 .contact-info a:hover {
@@ -75,7 +74,7 @@ body {
 
 .resume-button {
   display: inline-block;
-  margin-top: 2rem; /* Increase space above the CV button */
+  margin-top: 1rem; /* Add space above the CV button */
   padding: 0.5rem 1rem;
   background: none;
   border: none;
