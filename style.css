@@ -60,6 +60,7 @@ body {
   font-size: 0.9rem;
   text-align: center;
   margin-top: 1rem;
+  margin-bottom: 1.5rem;  /* Add space below the contact info */
 }
 
 .contact-info a {
@@ -73,9 +74,11 @@ body {
 }
 
 .resume-button {
+  display: inline-block;
+  margin-top: 1.5rem; /* Increase space above the CV button */
+  padding: 0.5rem 1rem;
   background: none;
   border: none;
-  padding: 0;
   color: #90caf9;
   font-size: 0.9rem;
   font-weight: 500;
