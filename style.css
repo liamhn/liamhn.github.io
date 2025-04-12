@@ -73,18 +73,21 @@ body {
 }
 
 .resume-button {
-  background-color: #90caf9;
-  color: #1e2a38; /* matches sidebar text color, more readable */
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #ffffff;
+  color: #1e2a38;
+  border: 2px solid #90caf9;
+  border-radius: 6px;
+  font-weight: 600;
   text-decoration: none;
-  font-weight: bold;
-  border-radius: 1px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .resume-button:hover {
-  background-color: #64b5f6;
-  color: #1e2a38;
+  background-color: #90caf9;
+  color: #ffffff;
 }
-
 /* Navigation Bar */
 .navbar {
   background-color: #1e2a38;
