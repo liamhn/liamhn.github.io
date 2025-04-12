@@ -60,11 +60,12 @@ body {
   font-size: 0.9rem;
   text-align: center;
   margin-top: 1rem;
-  margin-bottom: 2rem; /* Increase space below the contact info */
 }
 
 .contact-info a {
-  display: block; /* Make each link a block element */
+  color: #90caf9;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 .contact-info a:hover {
