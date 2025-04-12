@@ -75,7 +75,7 @@ body {
 
 .resume-button {
   display: inline-block;
-  margin-top: 1.5rem; /* Increase space above the CV button */
+  margin-top: 2rem; /* Increase space above the CV button */
   padding: 0.5rem 1rem;
   background: none;
   border: none;
